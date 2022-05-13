@@ -1,0 +1,47 @@
+{
+  "name": "dvsoftsrl/eloquent-searchable",
+  "description": "Your Package Description here",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [],
+  "authors": [
+    {
+      "name": "DV Soft srl",
+      "email": "developers@dvsoft.it"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/dvsoftsrl/eloquent-searchable/issues",
+    "source": "https://github.com/dvsoftsrl/eloquent-searchable"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0",
+    "illuminate/database": "^8|^9",
+    "illuminate/support": "^8|^9"
+  },
+  "require-dev": {
+    "illuminate/events": "^8|^9",
+    "orchestra/testbench": "^7",
+    "phpunit/phpunit": "^9.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "DvSoft\\EloquentSearchable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DvSoft\\EloquentSearchable\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  }
+}
