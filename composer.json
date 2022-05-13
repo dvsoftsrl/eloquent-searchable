@@ -23,7 +23,7 @@
   },
   "require-dev": {
     "illuminate/events": "^8|^9",
-    "orchestra/testbench": "^7",
+    "orchestra/testbench": "^5|^6|^7",
     "phpunit/phpunit": "^9.1"
   },
   "autoload": {
