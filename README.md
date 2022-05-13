@@ -1,8 +1,8 @@
 # eloquent-searchable
 
+![Packagist Version](https://img.shields.io/packagist/v/dvsoftsrl/eloquent-searchable?label=Version&style=flat-square)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dvsoftsrl/eloquent-searchable/CI?style=flat-square)](https://github.com/dvsoftsrl/eloquent-searchable/actions)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Travis](https://img.shields.io/travis/dvsoftsrl/eloquent-searchable.svg?style=flat-square)]()
-[![MIT licensed](https://img.shields.io/github/license/dvsoftsrl/eloquent-searchable?style=flat-square)](https://img.shields.io/github/license/dvsoftsrl/eloquent-searchable)
 [![Total Downloads](https://img.shields.io/packagist/dt/dvsoftsrl/eloquent-searchable.svg?style=flat-square)](https://packagist.org/packages/dvsoftsrl/eloquent-searchable)
 
 ## Install
