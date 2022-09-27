@@ -11,21 +11,25 @@ trait EloquentSearchableTrait
      * @param Builder $query
      * @param ?string $keyword
      * @param boolean $matchAllFields
+     *
      * @return Builder
      */
     public static function scopeSearch(Builder $query, ?string $keyword, bool $matchAllFields = false): Builder
     {
-        return $query->where(static function ($query) use ($keyword, $matchAllFields) {
+        if ($keyword) {
+            return $query->where(static function ($query) use ($keyword, $matchAllFields) {
 
-            foreach (static::getSearchableFields() as $field) {
-                if ($matchAllFields) {
-                    $query->where($field, 'LIKE', "%$keyword%");
-                } else {
-                    $query->orWhere($field, 'LIKE', "%$keyword%");
+                foreach (static::getSearchableFields() as $field) {
+                    if ($matchAllFields) {
+                        $query->where($field, 'LIKE', "%$keyword%");
+                    } else {
+                        $query->orWhere($field, 'LIKE', "%$keyword%");
+                    }
                 }
-            }
-
-        });
+            });
+        } else {
+            return $query;
+        }
     }
 
     /**
